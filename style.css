@@ -1,0 +1,30 @@
+body{
+font-family:timesnewroman;
+text-align: center;
+
+}
+
+div{
+  border: 4px solid black;
+  padding:10px 10px 4px;
+}
+h1,h2,p{
+ color:red;
+ text-align:center;
+
+}
+*
+{
+text-align:center;
+
+
+}
+
+/*
+way to write css comment
+1.external stylesheet added using <link> element inside <head> section of an html page ( used if all html pages are  neeeded  to astyle
+2.internal css sheet is used if only single unique html sheet is needed to style
+ for that<style> element is added inside the <head> element <head><style> body{ color:red; margin-left:20px;} </style></head>
+3.inline css,used if specificaly need to style single html element within html element start tag
+e.g <h1 style="color:blue;text-align:center;">this is heading</h1>
+*/
