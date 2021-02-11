@@ -1,5 +1,3 @@
-<script>
-  function myFunction(){
-    document.getElementById('java').innerHtML="Its javascript";
-  }
-  </script>
+function.myFunction{
+  document.getElementById('java').innerHTML="rashids javascript";
+}
