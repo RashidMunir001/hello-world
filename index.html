@@ -1,63 +1,161 @@
 
 <!DOCTYPE html>
-<hmtl>
+<hmtl lang="en">
 
 <head>
+<title>html document</title>
 <!this one written within head and within style elements is internal css>
 <link rel="stylesheet" href="style.css">
-<script src="java.js"></script>
+
+<script type="text/javascript" src="java.js"></script>
 </head>
 
 <body>
-         <h1 style="text-align:center;">My first heading</h1>
-         <pre>
+
+  <!its a bookmark to the link within heading with id=ntusite at line no. 59>
+<a  href="#ntusite" style="float:right;" >Jump to ntu link</a>
+<pre>
+
+<img src="rash.png"  style="width:300px; height:200px; float:right;">
+</pre>
+<! internal function with script tag to change text with cli k of button>
+<p id="rash">Hassan iqbal</p>
+
+<script>
+function getdata(){
+  document.getElementById("rash").innerHTML="zain-ul-abdeen";
+}
+</script>
+<button src="java.js" type="button" onclick="getdata()">click it to change nam</button>
+
+         <h1 >My first heading</h1>
+
+        <pre>
           <h2>My name is Rashid Munir sahoo form kamalia</h2>
          </pre>
-         <marquee>I want from there to there</marquee>
-<marquee id="one">
+         <marquee class="marq">I want from there to there</marquee>
+<marquee  class="marq">
          <p> this is me rashid sahoo building and coding html</p></marquee>
-<marquee id="two">
+<marquee class="marq">
          <p>you are beautiful</p></marquee>
-<marquee id="three">         <p> long ago i had worked on this holy grail of coding</p></marquee>
-<marquee id="four">          <p>learn coding before its too late</p>
+<marquee class="marq">         <p> long ago i had worked on this holy grail of coding</p></marquee>
+<marquee class="marq">          <p>learn coding before its too late</p>
 </marquee>
 <pre>
 
-<a style="text-decoration:none; font-size:20px; font-family: cursive;  " href="https://www.ntu.edu.pk" target="_blank">Ntu website</a>
+<a id="ntusite"  href="https://www.ntu.edu.pk" target="_blank">Ntu website</a>
 
 <pre>
 <!absolute url>
 <!image as link>
-<a href="https://www.ntu.edu.pk" "><img src="ntu.png" width:200px;height:200px;" alt="NTU"</a>
+
 
 </pre>
 <! opens email to let user send email to the mentioned email>
 <pre>
 <a href="mailto:radhid_ntu1081@outlook.com">send email</a></pre>
-<!button as a click>
+<!button as a solid navy;click>
 <! little javascript is used here to chekc that which event takes place here>
-<button onclick="document.location='https://www.pakistan.gov.pk'">NTU website</button>
-<pre>
-<p><img src="pic.png;" style="float:right; width:300px;height:300px;">This is rashid
-this para contains an image</p>
-</pre>
 
+</pre>
+<p id="p">There is text which is styled by width height property</p>
+<pre>
+</pre>
 <a href="C:\Users\Rashid\Downloads\Documents\10000000_642488686671226_6599435422098677940_n.mp4" target="_top">Taliban</a>
 <! taget fremaes  are _self,_parent,_blank,_top>
 <!absolute url is full web or address to external link whil>
 <! relative url is link to any local think inside page>
 <a href="file:///C:/Users/Rashid/github/hello-world/index.html">whats marquee</a>
-<p id="java">coding javacsript</p>
-<button type="button" onclick="myFunction()">click it</button>
+<! javascript doesnt have any print object, so we can call window.print method to print to print content>
+<button type="button" onclick="window.print()">Print this page</button>
+<pre>
+  <!link properties as to what color >
+<a id="w3" href="https://www.w3schools.com" target="_blank">w3school webite</a>
+<! this is a link to which bookmark at line no.13 directs>
+
+
+</pre>
+<!its window.alert java script element,which pop ups message, can skip thw window keyword>
+<script>alert("WARNING, you'r about to see my webpage");
+</script>
+<! it wil open the debugging consoLE and adds your sum there>
+<p>press f12 to enter console</p>
+<p>after f12 go to cosole and type your sum, it will return you the sum</p>
+<script>console.log(12+14);
+</script>
+<p id="arith"></p>
+<script>
+document.getElementById("arith").innerHTML=11+2*13/4;
+</script>
+<!+ signs con atenates too strings in js>
+<p id="conc"></p>
+<script>document.getElementById("conc").innerHTML="Rashid" + " " + "Munir";
+</script>
+<! this is calculating sum by placing numbers in var in jvascript>
+<mark style="padding:7px 7px;"><h>javascript variables</h></mark>
+<p id="var"></p>
+<script>   var x,y;
+           x=13,y=14;
+           total=x+y;
+           document.getElementById("var").innerHTML="x=13 , y=13" + "" + "The total sum is: " + total;
+           </script>
+           <pre>
+           </pre>
+           <! variables are assigned and shown by js>
+           <h>its variables in strings and numbers shown</h>
+<p id="string"></p>
+<!here var pi first declared and in next line assigned value>
+<script>
+var pi;
+pi= 3.14;
+var little= "awais";
+var small= "hassan";
+document.getElementById("string").innerHTML=pi + "<br>" + little + "<br>" + small;
+</script>
+<! on re-declaring a variable it will not lose its value>
+<! before using variables in js ,declare it with var keyword>
+<!after declaration assign value to variable using = operator,value can be assigned while declaring a variable>
+<p id="car"></p>
+<! herefunction has GLOBAL scope i.e it is called or can be called outside fucntion scope>
+<! so with myFunc() fucntion has been  called outside  fucntion scope)
+<script>
+<script>
+<
+var carname="toyota ,suzuki,honda";
+
+function myFunc(){
+document.getElementById("car").innerHTML="cars name are:" +  carname;
+}
+myFunc();
+</script>
+<p id="dogs"></p>
+<p id="dogs2"></p>
+<script>
+mydog();
+function mydog(){
+var dogtype="lebra, pitbull, germn, sheff, husky,caucasus";
+  document.getElementById("dogs").innerHTML="dogs types are: " +  dogtype;
+}
+document.getelementById("dogs2").innerHTML="dogs types are:" + dogtype;
+</script>
+<! setting border-box property will prevent from width of padding to cover content area too>
+<div class="hassan">
+my name is rashid munir sahoo, i born in far flung area of punjab, in distrct toba tek singh , in the noblefamily of ch,M ramzan munir sahoo, started schooling in kpps, spent 10 years till matriculation and attatchmentmoved on to
+chichawatni for college and after college went to NTU faislabad for degree in computer sciences.This is my very brief autobiography
+</div>
 </body>
-
 </hmtl>
+<!alue = undefined
+In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.
 
+A variable declared without a value will have the value undefined.
+
+The variable carName will have the value undefined after the execution of this statement:>
 <!comment if some properties defined for same selector(element) in different syle sheets then value from last read style>
 <!cascading order style to use when more than one style specified for an html element ? No.1 has highest priority>
 <! 1.inline style( inside an html element>
 <!external and internal sheets(in the head section)>
-<! browser default>
+<! browser deBfault>
 <! "hr" tag used to define horizoontal rule or thematic break in contents ,often displayed as a separate horizontal rule>
 <! "br" for line break or put an empty space b/w html elements>
 <! "pre" element defines performatted text means text will be displayed as you will preformatted text, text inside "pre"
@@ -81,3 +179,11 @@ will be displayed in fixed-width font(courier),preserves space and line breaks,>
 <! much interesting is following>
 <! "bdo" bidirectional override with attribute and value as (dir="rtl/ltr")render written words in reverse ordeer,either>
 <!Bleft to right or right to left>
+<!javascript>
+<!JavaScript Display Possibilities
+JavaScript can "display" data in different ways:
+
+Writing into an HTML element, using innerHTML.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log()>
